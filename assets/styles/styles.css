@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url("../images/lirr.gif");
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.jumbotron:hover{
+    /* illusion of link */
+    cursor: pointer;
+}
