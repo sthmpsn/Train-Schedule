@@ -6,7 +6,11 @@ Testing capabilities of using firebase as an external database to read/write so 
 
 ## Getting Started
 
-This is just a simple Web App in which you can download and open the "index.html" file.  The IDE used for this was VS Code
+This is just a simple Web App in which you can download and open the "index.html" file.  The IDE used for this was VS Code.
+
+## Using the Web App
+
+On load of the page it will automatically pull a snapshot of the data from Firebase.  To add a new train schedule fill in the appropriate from data and click Submit.  This will now be in the Firebase database and display on the screen
 
 ## Built With
 
