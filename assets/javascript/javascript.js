@@ -24,16 +24,33 @@ $(document).ready(function(){
         console.log(childSnapshot.val().destination);
         console.log(childSnapshot.val().frequency);
         console.log(childSnapshot.val().firstTrain);
+
         var tr = $('<tr>');
+        var tName = childSnapshot.val().trainName;
+        var trainDestination = childSnapshot.val().destination;
+        var trainFrequency = childSnapshot.val().frequency;
+        var fTrain = childSnapshot.val().firstTrain;
+        var nextArrival = moment.duration(frequency, 'minutes');   // every 30 minutes
 
         $empTableBody = $("#empTable tbody");
         $empTableBody.append(tr);
-        tr.append('<td>' +childSnapshot.val().trainName+ '</td>');
-        tr.append('<td>' +childSnapshot.val().destination+ '</td>');
-        tr.append('<td>' +childSnapshot.val().frequency+ '</td>');
+        tr.append('<td>' +tName+ '</td>');
+        tr.append('<td>' +trainDestination+ '</td>');
+        tr.append('<td>' +trainFrequency+ '</td>');
+
+        // calculate when the train arrives next
+        // midnight + frequency (looping)???
         tr.append('<td> Calculated Val </td>');
+
+        // calculate when how many minutes away the train is
+        // current time - frequency?
         tr.append('<td> Calculated Val </td>');
+
+
         $empTableBody.append('</tr>');
+
+
+
      });
 
 
