@@ -1,8 +1,8 @@
 
 
-# Project Title
+# hw-07 - Train Schedule (LIRR)
 
-One Paragraph of project description goes here
+Testing capabilities of using firebase as an external database to read/write so that Web App can pull from a db and maintain the most recent state/data as opposed to starting from scratch everytime
 
 ## Getting Started
 
